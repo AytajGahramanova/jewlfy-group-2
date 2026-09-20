@@ -70,14 +70,12 @@ header {
     font-family: Inter;
 }
 .product-details {
-    width: 100vw;
     background-image: url(./product.image/page_header_bg.jpg);
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 70vh;
     padding: 235px 0px 107px ;
 
     .product-details__info {
@@ -87,18 +85,22 @@ header {
         padding: 0 12px;
         margin: 0 113px;
         gap: 20px;
-    }
 
-    h1{
+        h1{
         font-size: 48px;
         font-family: Playfair Display;
         line-height: 60px;
         color: black;
+        }
     }
+
+    
     nav{
-        
+        font-size: 18px;
+        line-height: 26px;
         ul {
             display: flex;
+            gap: 8px;
             list-style: none;
             a {
             text-decoration: none;
