@@ -2400,7 +2400,9 @@ body {
 }
 
 .bloggheader h1{
-    font-size: 42px;
+
+    font-family: Playfair Display;
+    font-size: 48px;
     font-weight: 600;
     color: #2b2b2b;
     margin: 0 0 10px 0;
@@ -2623,7 +2625,7 @@ body {
     /* ----------  PRODUCT DETAILS    ---------- */
 
 .product-details {
-    background-image: url("./assets/PRODUCT/product-details/page_header_bg.jpg");
+    background-image: url("./PRODUCT/product-details/page_header_bg.jpg");
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
@@ -3284,7 +3286,7 @@ body {
     font-family: Inter;
 
     .contact-us {
-    background-image: url("./assets/PRODUCT/product-details/page_header_bg.jpg");
+    background-image: url("./PRODUCT/product-details/page_header_bg.jpg");
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
@@ -3530,7 +3532,7 @@ body {
     font-family: Inter;
 
     .login-details {
-    background-image: url("./assets/PRODUCT/product-details/page_header_bg.jpg");
+    background-image: url("./PRODUCT/product-details/page_header_bg.jpg");
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
@@ -3752,7 +3754,7 @@ body {
     font-family: Inter;
 
     .register-details {
-    background-image: url("./assets/PRODUCT/product-details/page_header_bg.jpg");
+    background-image: url("./PRODUCT/product-details/page_header_bg.jpg");
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
@@ -3968,3 +3970,9 @@ body {
     } 
 }
 /*? ================= F E Y R U Z     END ================ */
+
+.zindex{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
