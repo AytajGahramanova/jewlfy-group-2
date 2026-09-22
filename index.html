@@ -4,58 +4,1188 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="https://cloudflare.com" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <header>
-      <div class="navstart">
-        <div class="search">
-          <label for="search"></label>
-          <input type="search" name="search" id="" placeholder="Search" />
-          <img src="assets/image/search.png" alt="" />
+    <div class="home-top-bar">
+      <div class="home-top-bar-left">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="top-bar-center">
+        New arrivals just landed — explore the collection.
+        <a
+          href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+          class="home-discover-link"
+          >Discover Now!</a
+        >
+      </div>
+
+      <div class="home-top-bar-right-group">
+        <div class="home-top-bar-right">
+          <a href="#"><i class="fa-solid fa-truck-fast"></i>Order Tracking</a>
+          <a href="#"><i class="fa-solid fa-location-dot"></i>Store Location</a>
         </div>
-        <div class="headerimg">
+
+        <div class="home-right-lang">
+          <button type="button" class="home-language">
+            <span class="home-lang-down">English</span
+            ><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul class="home-lang">
+            <li><button type="button">English</button></li>
+            <li><button type="button">Français</button></li>
+            <li><button type="button">Deutsch</button></li>
+            <li><button type="button">Arabic</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <header class="home-jewlfy-header">
+      <div class="home-header-search">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="header-logo">
+        <a
+          href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+        >
           <img
             src="https://html.laralink.com/jewlfy/assets/img/logo.svg"
-            alt="Logo"
+            alt="Jewlfy"
           />
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <a
+          href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+          class="action-item"
+        >
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge">0</span>
+        </a>
+        <a
+          href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+          class="action-item"
+        >
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge">0</span>
+        </a>
+        <a
+          href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+          class="action-item"
+        >
+          <i class="fa-regular fa-user"></i>
+        </a>
+      </div>
+    </header>
+    <nav class="home-jewlfy-navbar">
+      <div class="home-nav-contact-left">
+        <span class="home_label">Email:</span>
+        <a href="#" class="value">info@jewlfy.com</a>
+      </div>
+
+      <ul class="home-nav-menu">
+        <li class="home-menu-item active"><a href="#">Home</a></li>
+        <li class="home-menu-item has-dropdown">
+          <a
+            href="./login.html"
+            >Shop</a
+          ><i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="home-menu-item has-dropdown">
+          <a
+            href="./product.html"
+            >Products</a
+          ><i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="home-menu-item has-dropdown">
+          <a
+            href="./register.html"
+            >Pages</a
+          ><i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="home-menu-item has-dropdown">
+          <a
+            href="./blog.html"
+            >Blog</a
+          ><i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="home-menu-item">
+          <a
+            href="./contact.html"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+
+      <div class="home-nav-contact-right">
+        <span class="home_label">Phone:</span>
+        <a href="tel:+15554548899" class="value">+1 555 454 8899</a>
+      </div>
+    </nav>
+    <section class="home-hero-section">
+      <div class="home-hero-container">
+        <div class="home-hero-content">
+          <span class="home-hero-subtitle">Ethical Luxury</span>
+          <h1 class="home-hero-title">Handcrafted<br />Elegance by Jewlfy</h1>
+          <p class="home-hero-description">
+            Unique, sustainable, and timeless pieces made just for<br />
+            you.
+          </p>
+          <a href="#" class="home-hero-btn">Shop Now</a>
         </div>
-        <div class="cardicons">
-          <div class="firsticons">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-              <path
-                d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
-              />
-            </svg>
-            <div>0</div>
+
+        <div class="home-hero-image-box"></div>
+      </div>
+    </section>
+
+    <section class="home-essence-section">
+      <div class="home-features-bar">
+        <div class="home-feature-item">
+          <div class="home-feature-icon-box">
+            <img
+              src="	https://html.laralink.com/jewlfy/assets/img/icons/free-shipping.svg"
+              alt=""
+            />
           </div>
-          <div class="secondicons">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-              <path
-                d="M241 87.1l15 20.7 15-20.7C296 52.5 336.2 32 378.9 32 452.4 32 512 91.6 512 165.1l0 2.6c0 112.2-139.9 242.5-212.9 298.2-12.4 9.4-27.6 14.1-43.1 14.1s-30.8-4.6-43.1-14.1C139.9 410.2 0 279.9 0 167.7l0-2.6C0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1z"
-              />
-            </svg>
-            <div>0</div>
+          <div class="home-feature-text">
+            <h2>Free Shipping</h2>
+            <p>Worldwide express</p>
           </div>
-          <div class="lasticons">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-              <path
-                d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"
-              />
-            </svg>
+        </div>
+        <div class="home-feature-item">
+          <div class="home-feature-icon-box">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/icons/secure-payment.svg"
+              alt=""
+            />
+          </div>
+          <div class="home-feature-text">
+            <h2>Secure Payment</h2>
+            <p>SSL encrypted</p>
+          </div>
+        </div>
+        <div class="home-feature-item">
+          <div class="home-feature-icon-box">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/icons/easy-return.svg"
+              alt=""
+            />
+          </div>
+          <div class="home-feature-text">
+            <h2>Easy Return</h2>
+            <p>30 days policy</p>
+          </div>
+        </div>
+        <div class="home-feature-item">
+          <div class="home-feature-icon-box">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/icons/certified-jewelry.svg"
+              alt=""
+            />
+          </div>
+          <div class="home-feature-text">
+            <h2>Certified Jewelry</h2>
+            <p>IGI / GIA reports</p>
           </div>
         </div>
       </div>
-    </header>
+
+      <div class="home-essence-content">
+        <span class="home-essence-subtitle">Our Essence</span>
+        <h2 class="home-essence-title">
+          Short about stone & silver where nature meets soul. We blend <br> ancient
+          artisan techniques with natural ingredients each piece of jewelry is a
+          tribute to slow living.
+        </h2>
+        <a
+          href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+          class="home-essence-link"
+          >View Our Story</a
+        >
+      </div>
+
+      <div class="home-gallery-grid">
+        <div class="home-gallery-card home-tilt-left">
+          <div class="home-image-wrapper">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/about-11.jpg"
+              alt="Artisan work"
+            />
+          </div>
+          <div class="home-card-footer">
+            <img
+              src="	https://html.laralink.com/jewlfy/assets/img/icons/natural-vegan.svg"
+              alt=""
+            />
+            <span>100% natural & vegan</span>
+          </div>
+        </div>
+
+        <div class="home-gallery-card home-card-center">
+          <div class="home-image-wrapper home-main-img">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/about-10.jpg"
+              alt="Handmade Jewelry"
+            />
+            <div class="home-image-overlay-text">Handmade Jewelry</div>
+          </div>
+          <div class="home-card-footer">
+            <img
+              src="	https://html.laralink.com/jewlfy/assets/img/icons/ethically-sourced-hand.svg"
+              alt=""
+            />
+            <span>Ethically sourced</span>
+          </div>
+        </div>
+        <div class="home-gallery-card home-tilt-right">
+          <div class="home-image-wrapper">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/about-12.jpg"
+              alt="Crafting process"
+            />
+          </div>
+          <div class="home-card-footer">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/icons/hand-poured.svg"
+              alt=""
+            />
+            <span>Hand-poured with love</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-categories-section">
+      <div class="home-container">
+        <h2 class="home-main-title">Shop by Artisan Categories</h2>
+        <div class="home-categories-grid">
+          <a
+            href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+            class="home-cat-card"
+          >
+            <div class="home-cat-img-box">
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/categories/category-earrings-4.png"
+                alt="Earrings"
+              />
+            </div>
+            <div class="home-cat-desc">
+              <span class="home-cat-title">Earrings</span>
+              <span class="home-cat-count">15 items</span>
+            </div>
+          </a>
+          <a
+            href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+            class="home-cat-card"
+          >
+            <div class="home-cat-img-box">
+              <img
+                src="https://html.laralink.com/jewlfy/assets/img/categories/category-bracelets-4.png"
+                alt="Bracelets"
+              />
+            </div>
+            <div class="home-cat-desc">
+              <span class="home-cat-title">Bracelets</span>
+              <span class="home-cat-count">9 items</span>
+            </div>
+          </a>
+          <a
+            href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+            class="home-cat-card"
+          >
+            <div class="home-cat-img-box">
+              <img
+                src="https://html.laralink.com/jewlfy/assets/img/categories/category-pendant-1.png"
+                alt="Pendant"
+              />
+            </div>
+            <div class="home-cat-desc">
+              <span class="home-cat-title">Pendant</span>
+              <span class="home-cat-count">6 items</span>
+            </div>
+          </a>
+          <a
+            href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+            class="home-cat-card"
+          >
+            <div class="home-cat-img-box">
+              <img
+                src="https://html.laralink.com/jewlfy/assets/img/categories/category-rings-4.png"
+                alt="Rings"
+              />
+            </div>
+            <div class="home-cat-desc">
+              <span class="home-cat-title">Rings</span>
+              <span class="home-cat-count">18 items</span>
+            </div>
+          </a>
+          <a
+            href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+            class="home-cat-card"
+          >
+            <div class="home-cat-img-box">
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/categories/category-necklace-4.png"
+                alt="Necklaces"
+              />
+            </div>
+            <div class="home-cat-desc">
+              <span class="home-cat-title">Necklaces</span>
+              <span class="home-cat-count">12 items</span>
+            </div>
+          </a>
+          <a
+            href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+            class="home-cat-card"
+          >
+            <div class="home-cat-img-box">
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/categories/category-anklets-4.png"
+                alt="Anklets"
+              />
+            </div>
+            <div class="home-cat-desc">
+              <span class="home-cat-title">Anklets</span>
+              <span class="home-cat-count">8 items</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-trending-section">
+      <div class="home-container">
+        <div class="home-trend-top">
+          <h2 class="home-main-title">Trending Products</h2>
+          <a
+            href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+            class="home-view-all"
+            >View All Collection</a
+          >
+        </div>
+        <div class="home-products-grid">
+          <div class="home-prod-card">
+            <div class="home-prod-thumb">
+              <span class="home-tag">New</span>
+              <img
+                src="https://html.laralink.com/jewlfy/assets/img/product-img-14.png"
+                alt="Bracelet"
+              />
+              <div class="home-prod-actions">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+            <div class="home-prod-content">
+              <h3 class="home-prod-name">
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Bracelet</a
+                >
+              </h3>
+              <div class="home-stars">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+              </div>
+              <span class="home-price">$29.00</span>
+            </div>
+          </div>
+          <div class="home-prod-card">
+            <div class="home-prod-thumb">
+              <span class="home-tag">New</span>
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/product-img-15.png"
+                alt="Dew Drop Threaders"
+              />
+              <div class="home-prod-actions">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+            <div class="home-prod-content">
+              <h3 class="home-prod-name">
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Dew Drop Threaders</a
+                >
+              </h3>
+              <div class="home-stars">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+              </div>
+              <span class="home-price">$18.00</span>
+            </div>
+          </div>
+          <div class="home-prod-card">
+            <div class="home-prod-thumb">
+              <span class="home-tag">New</span>
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/product-img-16.png"
+                alt="Float Chain"
+              />
+              <div class="home-prod-actions">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+            <div class="home-prod-content">
+              <h3 class="home-prod-name">
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Float Chain</a
+                >
+              </h3>
+              <div class="home-stars">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+              </div>
+              <span class="home-price">$55.00</span>
+            </div>
+          </div>
+          <div class="home-prod-card">
+            <div class="home-prod-thumb">
+              <span class="home-tag">New</span>
+              <img
+                src="https://html.laralink.com/jewlfy/assets/img/product-img-17.png"
+                alt="Stacking Ring"
+              />
+              <div class="home-prod-actions">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+            <div class="home-prod-content">
+              <h3 class="home-prod-name">
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Stacking Ring</a
+                >
+              </h3>
+              <div class="home-stars">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+              </div>
+              <span class="home-price">$45.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-banner-section">
+      <div class="home-container">
+        <div class="home-banner-grid">
+          <div class="home-banner-card">
+            <div class="home-banner-content">
+              <span class="home-banner-subtitle">Flash Sale</span>
+              <h3 class="home-banner-title">
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Handmade Jewelry Artisan Set</a
+                >
+              </h3>
+              <div class="home-banner-price">
+                <span class="home-current-price">$89</span>
+                <span class="home-old-price">$189</span>
+                <span class="home-discount">(-53% off)</span>
+              </div>
+              <a
+                href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                class="home-banner-btn"
+                >Shop Now</a
+              >
+            </div>
+            <div class="home-banner-img-box">
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/promo-product-1.jpg"
+                alt="Handmade Jewelry Artisan Set"
+              />
+            </div>
+          </div>
+
+          <div class="home-banner-card">
+            <div class="home-banner-content">
+              <span class="home-banner-subtitle">Midnight Deal</span>
+              <h3 class="home-banner-title">
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Crystal-Infused Charm Hairclip</a
+                >
+              </h3>
+              <div class="home-banner-price">
+                <span class="home-current-price">$49</span>
+                <span class="home-old-price">$98</span>
+                <span class="home-discount">(-50% off)</span>
+              </div>
+              <a
+                href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                class="home-banner-btn"
+                >Shop Now</a
+              >
+            </div>
+            <div class="home-banner-img-box">
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/promo-product-2.jpg"
+                alt="Crystal-Infused Charm Hairclip"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-featured-section">
+      <div class="home-container">
+        <div class="home-featured-top">
+          <h2 class="home-main-title">Featured Products</h2>
+          <a href="#" class="home-view-all">View All Products</a>
+        </div>
+        <div class="home-featured-wrapper">
+          <button class="home-slider-arrow home-arrow-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="home-featured-grid">
+            <div class="home-feat-card">
+              <div class="home-feat-thumb">
+                <span class="home-feat-tag">New</span>
+                <img
+                  src="	https://html.laralink.com/jewlfy/assets/img/product-img-60.png"
+                  alt="Bracelet"
+                />
+                <div class="home-feat-actions">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="far fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <div class="home-feat-content">
+                <h3 class="home-feat-name">
+                  <a
+                    href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                    >Bracelet</a
+                  >
+                </h3>
+                <div class="home-feat-stars">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <div class="home-feat-price">$29.00</div>
+              </div>
+            </div>
+
+            <div class="home-feat-card">
+              <div class="home-feat-thumb">
+                <span class="home-feat-tag">New</span>
+                <img
+                  src="https://html.laralink.com/jewlfy/assets/img/product-img-61.png"
+                  alt="Necklace"
+                />
+                <div class="home-feat-actions">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="far fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <div class="home-feat-content">
+                <h3 class="home-feat-name">
+                  <a
+                    href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                    >Necklace</a
+                  >
+                </h3>
+                <div class="home-feat-stars">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <div class="home-feat-price">$90.00</div>
+              </div>
+            </div>
+
+            <div class="home-feat-card">
+              <div class="home-feat-thumb">
+                <span class="home-feat-tag">New</span>
+                <img
+                  src="https://html.laralink.com/jewlfy/assets/img/product-img-62.png"
+                  alt="Headbands"
+                />
+                <div class="home-feat-actions">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="far fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <div class="home-feat-content">
+                <h3 class="home-feat-name">
+                  <a
+                    href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                    >Headbands</a
+                  >
+                </h3>
+                <div class="home-feat-stars">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <div class="home-feat-price">$15.00</div>
+              </div>
+            </div>
+
+            <div class="home-feat-card">
+              <div class="home-feat-thumb">
+                <span class="home-feat-tag">New</span>
+                <img
+                  src="https://html.laralink.com/jewlfy/assets/img/product-img-63.png"
+                  alt="Hair Clips"
+                />
+                <div class="home-feat-actions">
+                  <a href="#"><i class="far fa-heart"></i></a>
+                  <a href="#"><i class="far fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <div class="home-feat-content">
+                <h3 class="home-feat-name">
+                  <a
+                    href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                    >Hair Clips</a
+                  >
+                </h3>
+                <div class="home-feat-stars">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <div class="home-feat-price">$10.00</div>
+              </div>
+            </div>
+          </div>
+          <button class="home-slider-arrow home-arrow-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-stories-section">
+      <div class="home-container">
+        <div class="home-stories-grid">
+          <div class="home-stories-content">
+            <h2 class="home-stories-title">Real Jewlfy Stories</h2>
+            <div class="home-stories-stars">
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <p class="home-stories-text">
+              "I proposed with a ring from Jewlfy's custom studio — the team let
+              me co-design the setting with a salt-and-pepper diamond. She said
+              yes, and the ring is absolutely timeless. The craftsmanship is
+              unlike any other."
+            </p>
+            <div class="home-stories-author-box">
+              <div class="home-author-img">
+                <img
+                  src="	https://html.laralink.com/jewlfy/assets/img/avatar-1.jpg"
+                  alt="Michael Sarah"
+                />
+              </div>
+              <div class="home-author-info">
+                <h4 class="home-author-name">Michael Sarah</h4>
+                <span class="home-author-role">Verified Purchase</span>
+              </div>
+            </div>
+            <div class="home-stories-controls">
+              <button class="home-story-arrow home-story-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="home-story-arrow home-story-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="home-stories-img-box">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/testimonial-5.jpg"
+              alt="Real Jewlfy Stories"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-collections-section">
+      <div class="home-container">
+        <div class="home-engraving-banner">
+          <span class="home-star-icon">✦</span>
+          <h2 class="home-engraving-text">Custom Engraving Available</h2>
+          <span class="home-star-icon">✦</span>
+        </div>
+        <div class="home-collections-grid-layout">
+          <div class="home-collections-info">
+            <span class="home-collections-subtitle">Handpicked for you</span>
+            <h3 class="home-collections-title">
+              Popular<br />
+              Collections
+            </h3>
+            <p class="home-collections-desc">
+              Bestselling treasures loved by thousands each piece tells a story
+              of artistry.
+            </p>
+            <a
+              href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+              class="home-collections-link"
+              >View All Collection</a
+            >
+          </div>
+          <div class="home-collections-items">
+            <div class="home-col-card">
+              <div class="home-col-thumb">
+                <span class="home-col-tag">New</span>
+                <img
+                  src="	https://html.laralink.com/jewlfy/assets/img/product-img-64.png"
+                  alt="Luna Drop Earrings"
+                />
+              </div>
+              <div class="home-col-content">
+                <h4 class="home-col-name">
+                  <a
+                    href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                    >Luna Drop Earrings</a
+                  >
+                </h4>
+                <div class="home-col-stars">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <div class="home-col-price">$29.00</div>
+              </div>
+            </div>
+            <div class="home-col-card">
+              <div class="home-col-thumb">
+                <span class="home-col-tag">New</span>
+                <img
+                  src="https://html.laralink.com/jewlfy/assets/img/product-img-65.png"
+                  alt="Pearl Harmony Necklace"
+                />
+              </div>
+              <div class="home-col-content">
+                <h4 class="home-col-name">
+                  <a
+                    href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                    >Pearl Harmony Necklace</a
+                  >
+                </h4>
+                <div class="home-col-stars">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <div class="home-col-price">$90.00</div>
+              </div>
+            </div>
+
+            <div class="home-col-card">
+              <div class="home-col-thumb">
+                <span class="home-col-tag">New</span>
+                <img
+                  src="https://html.laralink.com/jewlfy/assets/img/product-img-66.png"
+                  alt="Ethereal Vine Bracelet"
+                />
+              </div>
+              <div class="home-col-content">
+                <h4 class="home-col-name">
+                  <a
+                    href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                    >Ethereal Vine Bracelet</a
+                  >
+                </h4>
+                <div class="home-col-stars">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <div class="home-col-price">$35.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-journal-section">
+      <div class="home-container">
+        <div class="home-journal-header">
+          <span class="home-journal-subtitle">The Jewlfy Journal</span>
+          <h2 class="home-journal-title">
+            Discover The Soul Behind Each Piece Artisan Talks, Styling Guides,
+            And The Magic of Handmade Jewelry
+          </h2>
+        </div>
+        <div class="home-journal-grid">
+          <div class="home-journal-card">
+            <div class="home-journal-thumb">
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/blog-19.jpg"
+                alt="5 Essential Jewelry Care Hacks"
+              />
+            </div>
+            <div class="home-journal-content">
+              <div class="home-journal-date">
+                <i class="far fa-calendar-alt"></i> May 12, 2026
+              </div>
+              <h3 class="home-journal-name">
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >5 Essential Jewelry Care Hacks</a
+                >
+              </h3>
+              <a
+                href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                class="home-journal-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
+          <div class="home-journal-card">
+            <div class="home-journal-thumb">
+              <img
+                src="https://html.laralink.com/jewlfy/assets/img/blog-18.jpg"
+                alt="Necklace Stacking for Every Neckline"
+              />
+            </div>
+            <div class="home-journal-content">
+              <div class="home-journal-date">
+                <i class="far fa-calendar-alt"></i> May 11, 2026
+              </div>
+              <h3 class="home-journal-name">
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Necklace Stacking for Every Neckline</a
+                >
+              </h3>
+              <a
+                href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                class="home-journal-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
+          <div class="home-journal-card">
+            <div class="home-journal-thumb">
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/blog-20.jpg"
+                alt="The Lost-Wax Process at Jewlfy"
+              />
+            </div>
+            <div class="home-journal-content">
+              <div class="home-journal-date">
+                <i class="far fa-calendar-alt"></i> May 10, 2026
+              </div>
+              <h3 class="home-journal-name">
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >The Lost-Wax Process at Jewlfy</a
+                >
+              </h3>
+              <a
+                href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                class="home-journal-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-newsletter-section">
+      <div class="home-container">
+        <div class="home-newsletter-grid">
+          <div class="home-newsletter-content">
+            <span class="home-newsletter-subtitle">Exclusive Insider</span>
+            <h2 class="home-newsletter-title">Join the Jewlfy Inner Circle</h2>
+            <p class="home-newsletter-desc">
+              Be the first to witness new collections, secret drops, and artisan
+              stories. Subscribe now and unlock 10% off your first handcrafted
+              treasure.
+            </p>
+            <form class="home-newsletter-form">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="home-newsletter-input"
+                required
+              />
+              <button type="submit" class="home-newsletter-btn">
+                Subscribe
+              </button>
+            </form>
+            <span class="home-newsletter-note"
+              >No spam, only soulful updates. Unsubscribe anytime.</span
+            >
+          </div>
+          <div class="home-newsletter-images">
+            <div class="home-nl-img-box home-nl-img-1">
+              <img
+                src="https://html.laralink.com/jewlfy/assets/img/newsletter-img-1.jpg"
+                alt="Jewelry Collection"
+              />
+            </div>
+            <div class="home-nl-img-box home-nl-img-2">
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/newsletter-img-2.jpg"
+                alt="Artisan Jewelry"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-partners-section">
+      <div class="home-container">
+        <h3 class="home-partners-title">Our Partners</h3>
+        <div class="home-partners-grid">
+          <div class="home-partner-item">
+            <img
+              src="	https://html.laralink.com/jewlfy/assets/img/partner-logo-4.svg"
+              alt="Partner"
+            />
+          </div>
+          <div class="home-partner-item">
+            <img
+              src="	https://html.laralink.com/jewlfy/assets/img/partner-logo-5.svg"
+              alt="Partner"
+            />
+          </div>
+          <div class="home-partner-item">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/partner-logo-6.svg"
+              alt="Partner"
+            />
+          </div>
+          <div class="home-partner-item">
+            <img
+              src="	https://html.laralink.com/jewlfy/assets/img/partner-logo-7.svg"
+              alt="Partner"
+            />
+          </div>
+          <div class="home-partner-item">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/partner-logo-1.svg"
+              alt="Partner"
+            />
+          </div>
+          <div class="home-partner-item">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/partner-logo-2.svg"
+              alt="Partner"
+            />
+          </div>
+          <div class="home-partner-item">
+            <img
+              src="	https://html.laralink.com/jewlfy/assets/img/partner-logo-3.svg"
+              alt="Partner"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="home-footer-section">
+      <div class="home-container">
+        <div class="home-footer-grid">
+          <div class="home-footer-col">
+            <div class="home-footer-logo">
+              <img
+                src="	https://html.laralink.com/jewlfy/assets/img/logo.svg"
+                alt="Jewlfy"
+              />
+            </div>
+            <p class="home-footer-desc">
+              Heirloom-quality jewelry crafted with intention. Each gem tells a
+              story, each setting is a promise.
+            </p>
+            <h4 class="home-footer-social-title">Join Us</h4>
+            <div class="home-footer-socials">
+              <a href="#" class="home-social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="home-social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="home-social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="home-footer-col">
+            <h3 class="home-footer-heading">Discover</h3>
+            <ul class="home-footer-links">
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >New Arrivals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Bestsellers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Engagement Rings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Necklaces & Pendants</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Earrings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Gift Cards</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="home-footer-col">
+            <h3 class="home-footer-heading">About</h3>
+            <ul class="home-footer-links">
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Our Producers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Store Location</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="home-footer-col">
+            <h3 class="home-footer-heading">Contact Us</h3>
+            <ul class="home-footer-contact">
+              <li>
+                <span>Address:</span> 2525 Jefferson Street Portsmouth, VA 66707
+              </li>
+              <li><span>Phone:</span> +1 555 454 8899</li>
+              <li><span>Email:</span> info@jewlfy.com</li>
+              <li><span>Opening:</span> Mon - Sat 9:00 AM - 8:00 PM</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="home-footer-bottom">
+          <p class="home-copyright">
+            &copy; 2026 Jewlfy. All rights reserved by
+            <a
+              href="https://preview.themeforest.net/item/jewlfy-a-modern-jewelry-accessories-ecommerce-html-template/full_screen_preview/64547410"
+              >Laralink</a
+            >
+          </p>
+          <div class="home-payment-methods">
+            <img
+              src="https://html.laralink.com/jewlfy/assets/img/payment_logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
